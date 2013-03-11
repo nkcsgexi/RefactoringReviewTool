@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="refreview.editors.MultiPageEditor"
+            contributorClass="refreview.editors.MultiPageEditorContributor"
+            extensions="mpe"
+            icon="icons/sample.gif"
+            id="refreview.editors.MultiPageEditor"
+            name="Sample Multi-page Editor">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectives">
+           <perspective 
+            id="ncsu.csc.refactoring.review.perspective" 
+            name="Refactoring Review" 
+            class="refreview.perspective.RefReviewPerspective" 
+            icon="icons/perspective.gif"> 
+        </perspective> 
+   </extension>
+   <extension
+         point="org.eclipse.ui.perspectiveExtensions">
+   </extension>
+</plugin>
